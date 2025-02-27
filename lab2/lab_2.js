@@ -5,7 +5,14 @@ function inputNumbers(i)
 }
 
 function maxMultiply (a, b, c) {
-  return ((a > b ? a : b)*(b > c ? b : c))
+  let first = a > b ? a : b
+  let second
+  if (first === a)
+  {
+    second = (b > c ? b : c)
+  }
+  else second = (a > c ? a : c)
+  return first*second
 }
 
 let a = inputNumbers(1)
