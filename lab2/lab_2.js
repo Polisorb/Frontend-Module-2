@@ -91,6 +91,12 @@ function factorial(n) {
   }
 }
 
-console.log(factorial(5))
-console.log(factorial(-10))
-console.log(factorial(0))
+let n = prompt("Введите положительное число")
+if (Number.isNaN(n))
+{
+  alert("Введённые данные некорректны")
+}
+else 
+{
+  alert(`Факториал ${n} равен ` + factorial(n))
+}
